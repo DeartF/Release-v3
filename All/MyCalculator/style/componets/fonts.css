@@ -1,0 +1,8 @@
+@font-face {
+	src: url('../vendor/Nunito-Regular.ttf');
+	font-family: 'Nunito-Regular'
+}
+
+body {
+	font-family: "Nunito-Regular";
+}

@@ -1,0 +1,26 @@
+.clients .wrapper {
+	width: 1081px;
+	margin: 0 auto;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.clients {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.clients-main {
+	display: flex;
+	justify-content: space-between;
+	padding: 71px 0;
+}
+
+.clients-main__img {
+	width: 60px;
+	height: 60px;
+}

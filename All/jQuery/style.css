@@ -1,0 +1,55 @@
+@import url('reset.css');
+
+h1 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 100px;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #e7e7e7;
+	line-height: 20px;
+	font-size: 20px;
+}
+
+
+
+.anim {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+.art {
+	display: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.active {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.animation {
+	font-size: 30px;
+	line-height: 40px;
+	padding-left: 30px;
+}
+
+.hello {
+	color: white;
+	background-color: green;
+}
+
+.first {
+	padding-left: 15px;
+}
+
+div {
+	padding: 15px;
+}

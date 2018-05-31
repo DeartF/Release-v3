@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bondi</title>
+	<link rel="stylesheet" href="main.min.css">
+</head>
+<body>
+	<section class="modal" id="modal">
+		<div class="modal-backdrop"></div>
+		<form action="" class="modal-form">
+			<img src="img/close.svg" alt="" class="modal-close" onclick="hideModal()">
+			<div class="modal-head">
+				Sign UP form
+			</div>
+			<div class="form-content">
+			<input type="text" placeholder="Name" class="modal-form__input">
+			<input type="email" placeholder="eMail" class="modal-form__input">
+			<input type="password" placeholder="Password" class="modal-form__input">
+			<div class="dropdown">
+				<div class="dropdown-select" onclick="showDropdown()">
+					<span id="dropdown-text">Choose</span>
+					<img src="img/caret-down.svg" alt="">
+				</div>
+				<div class="dropdown-option" id="dropdown">
+					<li class="dropdown-option__item" onclick="setOption(event)">JavaScript</li>
+					<li class="dropdown-option__item" onclick="setOption(event)">C++</li>
+					<li class="dropdown-option__item" onclick="setOption(event)">C#</li>
+					<li class="dropdown-option__item" onclick="setOption(event)">Ruby</li>
+					<li class="dropdown-option__item" onclick="setOption(event)">Java</li>
+				</div>
+			</div>
+			<button class="btn btn--modal">Sign Up</button>
+			</div>
+		</form>
+	</section>
+	<section class="slide" id="slide">
+		<div class="slide-inner" id="slide-inner">
+	        <li class="slide-item">Home</li>
+			<li class="slide-item">Services</li>
+			<li class="slide-item">Portfolio</li>
+			<li class="slide-item">About</li>
+			<li class="slide-item">Contact</li>
+			<button class="btn btn--slide">Login</button>
+		</div>
+	</section>
+	<section class="slide-backdrop" id="slide-backdrop" onclick="hideAside()">				
+	</section>
+<section class="header">
+	<div class="header-inner">
+		<img src="img/menu.svg" class="menu" onclick="showAside()">
+		<img src="img/logo.png" alt="Bondi" class="logo">
+		<div class="nav">
+			<div class="nav-list">
+				<li class="nav-list__item active" onclick="Scroll('home', 0)">Home</li>
+				<li class="nav-list__item" onclick="Scroll('services', 1)">Services</li>
+				<li class="nav-list__item" onclick="Scroll('portfolio', 2)">Portfolio</li>
+				<li class="nav-list__item" onclick="Scroll('about', 3)">About</li>
+				<li class="nav-list__item" onclick="Scroll('contact', 4)">Contact</li>
+			</div>
+			<div class="search">
+				<input class="search__input" type="text" placeholder="Search">
+				<img  src="img/search.svg" class="search__icon" alt="">
+			</div>
+			<button class="btn">Login</button>
+		</div>
+	</div>
+</section>
+<section class="home" id="home">
+	<div class="home-inner">
+	<span class="home-title">Taste the Creativity</span>
+	<span class="home-subtitle">We make awesome graphic and web design</span>
+	<button class="btn btn--home" onclick="showModal()">Get Started</button>
+	</div>
+</section>
+<section class="service" id="services">
+	<section class="section-head">
+		<img src="img/path2x.png" alt="" class="section-head__img">
+		<span class="section-head__title">We are Good at </span>
+		<span class="section-head__subtitle">SOME OF THEASE STUFF UNDER</span>
+		<span class="section-head__border"></span>
+	</section>
+	<section class="service-inner">
+		<div class="service-item">
+			<div class="service-info">
+				1
+				<img src="img/icon.svg" alt="">
+			</div>
+			<span class="service-item__title">GRAPHIC DESIGN</span>
+			<span class="service-item__subtitle">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span>
+		</div>
+		<div class="service-item">
+			<div class="service-info">
+				2
+				<img src="img/mon.svg" alt="">
+			</div>
+			<span class="service-item__title">WEB DESIGN</span>
+			<span class="service-item__subtitle">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span>
+		</div>
+		<div class="service-item">
+			<div class="service-info">
+				3
+				<img src="img/roz.svg" alt="">
+			</div>
+			<span class="service-item__title">APP DESIGN</span>
+			<span class="service-item__subtitle">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span>
+		</div>
+	</section>
+</section>
+<section class="portfolio" id="portfolio">
+	<section class="section-head">
+		<img src="img/path2x.png" alt="" class="section-head__img">
+		<span class="section-head__title">Some Stuff About Us</span>
+		<span class="section-head__subtitle">THE GREAT TEAM</span>
+		<span class="section-head__border"></span>
+	</section>
+	<section class="portfolio-nav">
+				<li class="portfolio-nav__item active">All</li>
+				<li class="portfolio-nav__item">Design</li>
+				<li class="portfolio-nav__item">Code</li>
+				<li class="portfolio-nav__item">Photography</li>
+				<li class="portfolio-nav__item">Apps</li>
+	</section>
+	<section class="portfolio-inner">
+		<div class="portfolio-item first">
+			<div class="portfolio-info">
+				<div>
+					<span class="portfolio-info__title">
+						Awesome Work
+					</span>
+					<span class="portfolio-info__cat">
+						/Design
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-item two">
+					<div class="portfolio-info">
+						<div>
+							<span class="portfolio-info__title">
+								Awesome Work
+							</span>
+							<span class="portfolio-info__cat">
+								/Design
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item three">
+					<div class="portfolio-info">
+						<div>
+							<span class="portfolio-info__title">
+								Awesome Work
+							</span>
+							<span class="portfolio-info__cat">
+								/Design
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item four">
+					<div class="portfolio-info">
+						<div>
+							<span class="portfolio-info__title">
+								Awesome Work
+							</span>
+							<span class="portfolio-info__cat">
+								/Design
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item five">
+					<div class="portfolio-info">
+						<div>
+							<span class="portfolio-info__title">
+								Awesome Work
+							</span>
+							<span class="portfolio-info__cat">
+								/Design
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item six">
+					<div class="portfolio-info">
+						<div>
+							<span class="portfolio-info__title">
+								Awesome Work
+							</span>
+							<span class="portfolio-info__cat">
+								/Design
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item seven">
+					<div class="portfolio-info">
+						<div>
+							<span class="portfolio-info__title">
+								Awesome Work
+							</span>
+							<span class="portfolio-info__cat">
+								/Design
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item eight">
+					<div class="portfolio-info">
+						<div>
+							<span class="portfolio-info__title">
+								Awesome Work
+							</span>
+							<span class="portfolio-info__cat">
+								/Design
+							</span>
+						</div>
+					</div>
+				</div>
+	</section>
+	<button class="btn btn--portfolio">MORE</button>
+</section>
+<section class="stuff">
+	<section class="wrapper">
+		<section class="section-head">
+		<img src="img/path2x.png" alt="" class="section-head__img">
+		<span class="section-head__title">Some Stuff About Us</span>
+		<span class="section-head__subtitle">THE GREAT TEAM</span>
+		<span class="section-head__border"></span>
+		<span class="section-head__subtitle--second">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</span>
+		</section>
+		<section class="stuff-about">
+			<div class="stuff-about__retina">
+				<span class="stuff-about__h1">
+				Retina Design
+				</span>
+				<span>
+				Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.<br><br>
+				Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.
+				</span>
+				<button class="btn btn--order">OREDER ME ONE</button>
+			</div>
+			<div class="stuff-about__mac">
+				<img src="img/mac.png" alt="">
+			</div>
+		</section>
+	</section>
+</section>
+<section class="clients">
+	<section class="wrapper">
+		<section class="clients-main">
+			<img src="img/whatsapp.svg" alt="" class="clients-main__img">
+			<img src="img/whatsapp.svg" alt="" class="clients-main__img">
+			<img src="img/whatsapp.svg" alt="" class="clients-main__img">
+			<img src="img/whatsapp.svg" alt="" class="clients-main__img">
+			<img src="img/whatsapp.svg" alt="" class="clients-main__img">
+			<img src="img/whatsapp.svg" alt="" class="clients-main__img">
+			</svg>
+		</section>
+	</section>
+</section>
+<section class="slider">
+	<div class="carousel" id="carousel">
+		<div class="carousel-item">
+			<img src="img/adventure-06.jpg" alt="">
+		</div>
+		<div class="carousel-item">
+			<img src="img/adventure-11.jpg" alt="">
+		</div>
+		<div class="carousel-item">
+			<img src="img/951820009082492817.jpg" alt="">
+		</div>
+	</div>
+		<img src="img/arrow.svg" alt="" class="arrow arrow--left" onclick="prevSlide()">
+		<img src="img/arrow.svg" alt="" class="arrow arrow--right" onclick="nextSlide()">
+		<div class="dots">
+			<div class="dots-item active"></div>
+			<div class="dots-item"></div>
+			<div class="dots-item"></div>
+		</div>
+</section>
+<section class="advertise">
+	<div class="advertise-inner">
+	<span class="advertise-title">Start Your Project Now</span>
+	<span class="advertise-subtitle">Leave your description and we start the engine.Don't worry,you can cancel anytime</span>
+	<button class="btn btn--home">START PROJECT</button>
+	</div>
+ </section>
+<!--<script src="js/main.js"></script>	
+<script src="js/slide.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/scroll.js"></script>-->
+<script src="main.min.js"></script>
+</body>
+</html>

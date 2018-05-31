@@ -1,0 +1,10 @@
+.screen {
+	background-color: #000;
+	color: #fff;
+	height: 120px;
+	text-align: right;
+	font-size: 42px;
+	padding-top: 70px;
+	box-sizing: border-box;
+	padding-right: 15px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyCalculator</title>
+	<link rel="stylesheet" href="style/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/calculator.png">
+
+</head>
+<body>
+	<section class="calculator">
+		<div class="screen" id="screen">
+			0
+		</div>
+		<div class="keyboard">
+			<button class="keyboard__btn--clear" onclick="Reset()">
+				CLEAR
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				7			
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				8
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				9
+			</button>
+			<button class="keyboard__btn keyboard__btn--oper" onclick="setOperator(event)">
+				/
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				4
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				5
+			</button>
+			<button class="keyboard__btn circle" onclick="setNumber(event)">
+				6
+			</button>
+			<button class="keyboard__btn keyboard__btn--oper" onclick="setOperator(event)">
+				*
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				1
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				2
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				3
+			</button>
+			<button class="keyboard__btn keyboard__btn--oper" onclick="setOperator(event)">
+				+
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				0
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				00
+			</button>
+			<button class="keyboard__btn" onclick="setNumber(event)">
+				.
+			</button>
+			<button class="keyboard__btn keyboard__btn--oper" onclick="setOperator(event)">
+				-
+			</button>
+			<button class="keyboard__btn x2" onclick="x2()">
+				x2
+			</button>
+			<button class="keyboard__btn x3" onclick="x3()">
+				x3
+			</button>
+			<button class="keyboard__btn x4" onclick="x4()">
+				x4
+			</button>
+			<button class="keyboard__btn keyboard__btn--oper" onclick="Calculate()">
+				=
+			</button>
+
+		</div>
+	</section>
+	
+</body>
+<script src = 'js/calculator.js'>
+	
+</script>
+</html>

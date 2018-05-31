@@ -1,0 +1,57 @@
+.keyboard {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.keyboard__btn{
+	cursor: pointer;
+	outline: none;
+	font-weight: 700;
+	width: 62.5px;
+	height: 62.5px;
+	background: #333333;
+	-moz-border-radius: 31.25px;
+	-webkit-border-radius: 31.25px;
+	border-radius: 31.25px;
+	border: 1px solid rgba( 0, 0, 0, .1);
+	color: #fff;
+	font-size: 22px;
+}
+
+.keyboard__btn:hover {
+	transition: opacity .5s ease-out;
+	opacity: .4;
+}
+
+.keyboard__btn:active {
+	opacity: 1;
+}
+
+.keyboard__btn--oper {
+	background-color: #FF9501;
+	color: #fff;
+	font-weight: 500;
+	font-size: 34px;
+}
+
+
+.keyboard__btn--clear {
+	cursor: pointer;
+	outline: none;
+	width: 62.5px;
+	height: 62.5px;
+	background: #333333;
+	-moz-border-radius: 31.25px;
+	-webkit-border-radius: 31.25px;
+	border-radius: 31.25px;
+	border: 1px solid rgba( 0, 0, 0, .1);
+	width: 100%;
+	font-size: 40px;
+	color: #0D0D0D;
+	font-weight: 300;
+	background-color: #A6A6A6;
+}
+.keyboard__btn--clear:hover {
+	opacity: .4;
+}
+
